@@ -1,0 +1,10 @@
+target 'JWMTADataFeed', :exclusive => true do
+  pod "JWMTADataFeed", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "JWMTADataFeed", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
